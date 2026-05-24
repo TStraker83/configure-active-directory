@@ -3,7 +3,7 @@
 </p>
 
 <h1>On-site Active Directory setup using Azure</h1>
-This tutorial outlines the utilization of on-sie Active Directory using Azure Virtual Machines.<br />
+This tutorial outlines the utilization of an on-site Active Directory using Azure Virtual Machines.<br />
 
 
 <h2>Video Demonstration</h2>
