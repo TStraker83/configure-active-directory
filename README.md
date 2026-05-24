@@ -79,12 +79,12 @@ Choose:
 
 Example domain names:
 
-testlab.local
-strakerlab.local
+testlab.com
+strakerlab.com
 
 Example:
 
-strakerlab.local
+strakerlab.com
 
 - Set:
 
@@ -140,7 +140,7 @@ Computer Name Tab
 
 Enter:
 
-strakerlab.local
+strakerlab.com
 
 - When prompted:
 
