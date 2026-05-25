@@ -51,9 +51,34 @@ Change:
 
 - This is important because clients must always find the domain controller at the same IP.
 
-<h2>Step 3 — Install Active Directory Domain Services</h2>
+<h2>Step 3 — Create Client VM</h2>
 
-- Connect to DC01 using Remote Desktop (RDP).
+- Create your Windows 10/11 VM.
+
+IMPORTANT:
+
+The client VM must use the Domain Controller as DNS.
+
+- Change DNS Server
+
+Go to:
+
+- Client VM → Network Interface → DNS Servers
+
+Set:
+
+- Custom DNS
+
+Enter:
+
+- (Private IP of DC1)
+
+Save.
+
+- Restart the client VM.
+<h2>Step 4 — Install Active Directory Domain Services</h2>
+
+- Connect to DC1 using Remote Desktop (RDP).
 
 Open:
 
@@ -71,7 +96,7 @@ Click:
 
 - “Promote this server to a domain controller”
 
-<h2>Step 4 — Create the Domain</h2>
+<h2>Step 5 — Create the Domain</h2>
 
 Choose:
 
@@ -93,32 +118,6 @@ DSRM password
 Finish installation.
 
 - The VM will reboot automatically.
-
-<h2>Step 5 — Configure DNS on Client VM</h2>
-
-- Now create your Windows 10/11 VM.
-
-IMPORTANT:
-
-The client VM must use the Domain Controller as DNS.
-
-- Change DNS Server
-
-Go to:
-
-- Client VM → Network Interface → DNS Servers
-
-Set:
-
-- Custom DNS
-
-Enter:
-
-- (Private IP of DC01)
-
-Save.
-
-- Restart the client VM.
 
 <h2>Step 6 — Join Client to Domain</h2>
 
