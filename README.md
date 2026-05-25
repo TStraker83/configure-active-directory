@@ -20,7 +20,7 @@ This tutorial outlines the utilization of an on-site Active Directory using Azur
 
 <h2>Configuration Steps</h2>
 
-<h2>Step 1 — In Microsoft Azure Portal:</hs>
+<h2>Step 1 — In Microsoft Azure Portal:</h2>
 - Create a Resource Group
 - Create a Virtual Network:
 Example:
