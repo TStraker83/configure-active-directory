@@ -25,12 +25,12 @@ This tutorial outlines the utilization of an on-site Active Directory using Azur
 - In Microsoft Azure Portal:
 
 Create VM
-OS: Windows Server 2022
-Name: DC1
-Size: B2s (fine for labs)
-Username/password: create admin credentials
-Virtual Network:
-Create new VNet
+- OS: Windows Server 2022
+- Name: DC1
+- Size: B2s (fine for labs)
+- Username/password: create admin credentials
+- Virtual Network:
+- Create new VNet
 Example:
 VNet: LabNetwork
 Subnet: default
