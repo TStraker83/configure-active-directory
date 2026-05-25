@@ -20,28 +20,31 @@ This tutorial outlines the utilization of an on-site Active Directory using Azur
 
 <h2>Configuration Steps</h2>
 
-<h2>Step 1 — Create the Domain Controller VM</h2>
+<h2>Step 1 — In Microsoft Azure Portal:</hs>
+- Create a Resource Group
+- Create a Virtual Network:
+Example:
+VNet: LabNetwork
+
+
+<h2> Step 2 - Create the Domain Controller VM</h2>
 
 - In Microsoft Azure Portal:
 
 Create VM
-- OS: Windows Server 2022
-- Name: DC1
-- Size: B2s (fine for labs)
-- Username/password: create admin credentials
-- Virtual Network:
-- Create new VNet
-Example:
-VNet: LabNetwork
+OS: Windows Server 2022
+Name: DC1
+Size: B2s (fine for labs)
+Username/password: create admin credentials
 Subnet: default
 
-<h2>Step 2 — Set Static Private IP</h2>
+<h2>Step 3 — Set Static Private IP</h2>
 
 - After the VM deploys:
 
 Go To:
 
-- DC01 → Networking → Network Interface → IP Configurations
+- DC1 → Networking → Network Interface → IP Configurations
 
 Change:
 
@@ -53,7 +56,15 @@ Change:
 
 <h2>Step 3 — Create Client VM</h2>
 
-- Create your Windows 10/11 VM.
+- In Microsoft Azure Portal:
+
+OS Windows 10/11 VM
+Name: CLIENT
+Size: B2s (fine for labs)
+Username/password: create client credentials
+Set VNet to the same as DC1
+Subnet: default
+
 
 IMPORTANT:
 
@@ -63,19 +74,14 @@ The client VM must use the Domain Controller as DNS.
 
 Go to:
 
-- Client VM → Network Interface → DNS Servers
-
-Set:
-
-- Custom DNS
+- Client VM → Network Interface → DNS Servers → Custom DNS
 
 Enter:
 
 - (Private IP of DC1)
 
-Save.
+Save → Restart the client VM.
 
-- Restart the client VM.
 <h2>Step 4 — Install Active Directory Domain Services</h2>
 
 - Connect to DC1 using Remote Desktop (RDP).
@@ -95,6 +101,7 @@ Install:
 Click:
 
 - “Promote this server to a domain controller”
+- Restart the DC1 VM
 
 <h2>Step 5 — Create the Domain</h2>
 
@@ -105,10 +112,6 @@ Choose:
 Example domain names:
 
 testlab.com
-strakerlab.com
-
-Example:
-
 strakerlab.com
 
 - Set:
@@ -126,20 +129,14 @@ Finish installation.
 Open:
 Settings → System → About → Rename this PC (Advanced)
 
-OR:
-
-sysdm.cpl
-
 Then:
 
-Computer Name Tab
-
-→ Change
-→ Domain
+Computer Name Tab → Change → Domain
 
 Enter:
 
-strakerlab.com
+domain name:
+Example: strakerlab.com
 
 - When prompted:
 
