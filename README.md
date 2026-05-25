@@ -32,11 +32,16 @@ VNet: LabNetwork
 
 - In Microsoft Azure Portal:
 
-Create VM
+→ Create VM
+
 OS: Windows Server 2022
+
 Name: DC1
+
 Size: B2s (fine for labs)
+
 Username/password: create admin credentials
+
 Subnet: default
 
 <h2>Step 3 — Set Static Private IP</h2>
@@ -59,11 +64,16 @@ Change:
 
 - In Microsoft Azure Portal:
 
+→ Create VM
+
 OS Windows 10/11 VM
-Name: CLIENT
+
 Size: B2s (fine for labs)
+
 Username/password: create client credentials
+
 Set VNet to the same as DC1
+
 Subnet: default
 
 
