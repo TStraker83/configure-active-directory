@@ -155,7 +155,8 @@ Restart the PC.
 <h2>Deployment and Configuration Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1480" height="1063" alt="image" src="https://github.com/user-attachments/assets/36961c5d-2264-4082-bd18-2d4da593b5b0" />
+<img width="1486" height="1058" alt="image" src="https://github.com/user-attachments/assets/a5109496-fde8-4341-b55c-b1035b916a85" />
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -163,7 +164,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/b17bdf04-f01e-4269-8d89-50f446ef1726" />
+<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/dc0443be-8722-4eb2-85c4-4e4b2b5822d3" />
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -171,6 +173,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/1e022676-12f8-463e-b13c-f3e42ac0e2e3" />
+
 </p>
 <p>
