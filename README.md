@@ -60,7 +60,7 @@ Change:
 
 - This is important because clients must always find the domain controller at the same IP.
 
-<h2>Step 3 — Create Client VM</h2>
+<h2>Step 4 — Create Client VM</h2>
 
 - In Microsoft Azure Portal:
 
@@ -93,7 +93,7 @@ Enter:
 
 Save → Restart the client VM.
 
-<h2>Step 4 — Install Active Directory Domain Services</h2>
+<h2>Step 5 — Install Active Directory Domain Services</h2>
 
 - Connect to DC1 using Remote Desktop (RDP).
 
@@ -114,7 +114,7 @@ Click:
 - “Promote this server to a domain controller”
 - Restart the DC1 VM
 
-<h2>Step 5 — Create the Domain</h2>
+<h2>Step 6 — Create the Domain</h2>
 
 Choose:
 
@@ -133,7 +133,7 @@ Finish installation.
 
 - The VM will reboot automatically.
 
-<h2>Step 6 — Join Client to Domain</h2>
+<h2>Step 7 — Join Client to Domain</h2>
 
 - On the client VM:
 
@@ -168,7 +168,10 @@ Restart the PC.
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+The above pictures are a visual assist for Steps 1 - 3. 
+
+Create Resource group → Create VNet → Create Domain Controller VM → Change private IP from Dynamic to Static
+
 </p>
 <br />
 
@@ -179,7 +182,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 4
+Create Client VM (Client VM must have same VNet as DC) → Change DNS Server → Restart Client VM
 </p>
 <br />
 
@@ -191,7 +195,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img width="4032" height="3024" alt="IMG_0042" src="https://github.com/user-attachments/assets/e70002e2-a297-4353-aac0-62a08dde75ba" />
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 5 - 6
+
+Open Remote Desktop → Use DC public IP address and credentials to sign in → On server manager → Add roles and features → Active Directory Services → Install
+
+Once it done installing → Promote this server to Domain Controller → Add new forest → insert selected domain (i.e. strakerlab.com) → Update credentials → Domain Controller will automatically restart
+
 </p>
 <br />
 <p>
@@ -203,6 +212,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Step 7
+
+Open Remote Desktop → Use Client public IP address and credentials to sign in → settings → System → About → Rename this PC (Advanced) → Change → Domain name → Use updated credentials → Restart PC
 </p>
 <br />
