@@ -161,9 +161,11 @@ Restart the PC.
 
 <h2>Deployment and Configuration Steps</h2>
 
-<p>
-<img width="1480" height="1063" alt="image" src="https://github.com/user-attachments/assets/36961c5d-2264-4082-bd18-2d4da593b5b0" />
-<img width="1486" height="1058" alt="image" src="https://github.com/user-attachments/assets/a5109496-fde8-4341-b55c-b1035b916a85" />
+<p><img width="1631" height="865" alt="Screenshot 2026-05-25 202014" src="https://github.com/user-attachments/assets/855207dc-c8c7-44bc-896c-cc95a690e4f1" />
+<img width="1180" height="848" alt="Screenshot 2026-05-25 192902" src="https://github.com/user-attachments/assets/1720add1-2dff-4c5d-b190-51d394d2179a" />
+<img width="1167" height="892" alt="Screenshot 2026-05-25 192945" src="https://github.com/user-attachments/assets/c9e494a2-a866-46a4-a712-e65fbbbb3e03" />
+<img width="1630" height="899" alt="Screenshot 2026-05-25 193711" src="https://github.com/user-attachments/assets/34a88fe0-9d21-41d9-b765-78d70654b95e" />
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -171,8 +173,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 <p>
-<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/b17bdf04-f01e-4269-8d89-50f446ef1726" />
-<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/dc0443be-8722-4eb2-85c4-4e4b2b5822d3" />
+<img width="1637" height="986" alt="Screenshot 2026-05-25 193835" src="https://github.com/user-attachments/assets/95df6f4c-2556-4b9e-bada-4d3547c487f7" />
+<img width="1177" height="904" alt="Screenshot 2026-05-25 193422" src="https://github.com/user-attachments/assets/1442a80d-9775-41fa-862f-81d37d0994b2" />
+<img width="1217" height="895" alt="Screenshot 2026-05-25 193246" src="https://github.com/user-attachments/assets/60f7790d-ddbb-4433-8f13-b025f461664e" />
+
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -180,7 +184,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <br />
 
 <p>
-<img width="1448" height="1086" alt="image" src="https://github.com/user-attachments/assets/1e022676-12f8-463e-b13c-f3e42ac0e2e3" />
+<img width="4032" height="3024" alt="IMG_0038" src="https://github.com/user-attachments/assets/04fb6cbe-c62b-4fb1-9ae6-76bb6d2c2a86" />
+<img width="4032" height="3024" alt="IMG_0039" src="https://github.com/user-attachments/assets/7755595b-0f27-4eac-98ff-cc00d42e29ff" />
+<img width="4032" height="3024" alt="IMG_0040" src="https://github.com/user-attachments/assets/895ca4ba-f5a5-49ab-b11f-1e497e5d0031" />
+<img width="4032" height="3024" alt="IMG_0041" src="https://github.com/user-attachments/assets/8763f25f-d3ea-43cc-8b3e-32f00732ca6e" />
+<img width="4032" height="3024" alt="IMG_0042" src="https://github.com/user-attachments/assets/e70002e2-a297-4353-aac0-62a08dde75ba" />
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+<p>
+<img width="4032" height="3024" alt="IMG_0043" src="https://github.com/user-attachments/assets/515749e9-77b9-43d5-8be9-de2bc334fa60" />
+<img width="4032" height="3024" alt="IMG_0044" src="https://github.com/user-attachments/assets/37308a08-3b6c-4817-b620-6041b956c84e" />
+<img width="4032" height="3024" alt="IMG_0045" src="https://github.com/user-attachments/assets/852da1a0-909c-4b6a-9908-b38f33353cec" />
+<img width="4032" height="3024" alt="IMG_0046" src="https://github.com/user-attachments/assets/f697bf4e-2fd3-4a80-b067-81dc981c9471" />
+<img width="4032" height="3024" alt="IMG_0047" src="https://github.com/user-attachments/assets/cd027c4b-f4b7-4ae2-9da9-599c68b49c26" />
 
 </p>
 <p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
