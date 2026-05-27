@@ -3,7 +3,8 @@
 </p>
 
 <h1>On-site Active Directory setup using Azure</h1>
-This tutorial outlines the utilization of an on-site Active Directory using Azure Virtual Machines.<br />
+
+Outline of how to setup an Active Directory using Azure Virtual Machines.<br />
 
 
 <h2>Environments and Technologies Used</h2>
@@ -18,124 +19,124 @@ This tutorial outlines the utilization of an on-site Active Directory using Azur
 - Windows Server 2022
 - Windows 10 (22H2)
 
-<h2>Configuration Steps</h2>
+<h2>Step 1 — Create a Resource Group and VNet</h2>
 
-<h2>Step 1 — In Microsoft Azure Portal:</h2>
+- In Microsoft Azure Portal:
 
-- Create a Resource Group
-- Create a Virtual Network:
-Example:
-VNet: LabNetwork
+Click on <b>Resource Group</b> → Create → name your Resource Group
+
+Example: TestRG
+
+Then:
+
+- Create a Virtual Network (VNet):
+
+Click on <b>Virtual Network</b> → Create → name your VNet
+
+Example VNet: TEST
 
 
 <h2> Step 2 - Create the Domain Controller VM</h2>
 
-- In Microsoft Azure Portal:
+In Microsoft Azure Portal:
 
-→ Create VM
+Go to <b> Virtual Machines</b> → Create
 
-OS: Windows Server 2022
+Create VM:
 
-Name: DC1
+- Resource Group
 
-Size: B2s (fine for labs)
+Example: Test
 
-Username/password: create admin credentials
+- OS: Windows Server 2022
 
-Subnet: default
+- Name: Name of your choice
+
+Example: DC1
+
+- Size: B2s (fine for labs)
+
+- Username/password: create admin credentials
+
+- VNet: TEST
 
 <h2>Step 3 — Set Static Private IP</h2>
 
-- After the VM deploys:
+After the VM deploys go to:
 
-Go To:
-
-- DC1 → Networking → Network Interface → IP Configurations
+- Virtual Machine → DC1 → Networking → Network Interface → IP Configurations
 
 Change:
 
-- Allocation: Dynamic → Static
-
-- Save changes.
+- Allocation: Dynamic → Static → Save changes
 
 - This is important because clients must always find the domain controller at the same IP.
 
 <h2>Step 4 — Create Client VM</h2>
 
-- In Microsoft Azure Portal:
+In Microsoft Azure Portal:
 
-→ Create VM
+Go to <b> Virtual Machines</b> → Create
 
-OS Windows 10/11 VM
+- Resource Group should be the same as DC1's
 
-Size: B2s (fine for labs)
+Example: TestRG
 
-Username/password: create client credentials
+- OS Windows 10/11 VM
 
-Set VNet to the same as DC1
+- Size: B2s (fine for labs)
 
-Subnet: default
+- Username/password: create client credentials
 
+- Set VNet to TEST (same as DC1)
 
-IMPORTANT:
+<b>IMPORTANT:</b>
 
-The client VM must use the Domain Controller as DNS.
+- The Client VM must use the Domain Controller as DNS.
 
-- Change DNS Server
+<h2>Step 5 — Change Client DNS Server</h2>
 
 Go to:
 
-- Client VM → Network Interface → DNS Servers → Custom DNS
+- Client VM → Networking → Network Setting → Network Interface → DNS Servers → Custom DNS → DC1's Private IP
 
-Enter:
+- Save → Restart the Client VM.
 
-- (Private IP of DC1)
-
-Save → Restart the client VM.
-
-<h2>Step 5 — Install Active Directory Domain Services</h2>
+<h2>Step 6 — Install Active Directory Domain Services</h2>
 
 - Connect to DC1 using Remote Desktop (RDP).
+
+Open RDP:
+
+- In the Windows search bar on your taskbar, type Remote Desktop Connection and press Enter.
+
+- Input DC1's public IP address → Input your DC1 username and password → connect
 
 Open:
 
 - Server Manager
 
-→ Add Roles and Features
+→ Add Roles and Features → Check Active Directory Domain Services (AD DS) → click next until Install
 
-Install:
+After install finishes click:
 
-- Active Directory Domain Services (AD DS)
+- <b>“Promote this server to a domain controller”</b>
 
-- After install finishes:
+Add a new forest → Input Domain Name
 
-Click:
+Example Domain name: Testlab.com
 
-- “Promote this server to a domain controller”
-- Restart the DC1 VM
+Click Next → create a password → click next until Install → DC1 PC will restart automatically
 
-<h2>Step 6 — Create the Domain</h2>
+- Log into DC1 with domain credentials and password
 
-Choose:
+Example:
 
-- Add a new forest
+Testlab.com\username (domain admin)
 
-Example domain names:
+<h2>Step 8 — Join Client to Domain</h2>
 
-testlab.com
-strakerlab.com
-
-- Set:
-
-DSRM password
-
-Finish installation.
-
-- The VM will reboot automatically.
-
-<h2>Step 7 — Join Client to Domain</h2>
-
-- On the client VM:
+- On the Client VM:
 
 Open:
 Settings → System → About → Rename this PC (Advanced)
@@ -147,73 +148,18 @@ Computer Name Tab → Change → Domain
 Enter:
 
 domain name:
-Example: strakerlab.com
+
+Example: Testlab.com
 
 - When prompted:
 
 Username:
-Administrator
-Password:
-Use your domain admin password.
-Restart the PC.
+
+Exampl: Testlab.com\username (domain admin)
+
+Password: Use the domain admin password.
+
+- Restart the PC.
 
 - <h2>You now have Active Directory working.</h2>
 
-<h2>Deployment and Configuration Steps</h2>
-
-<p><img width="1631" height="865" alt="Screenshot 2026-05-25 202014" src="https://github.com/user-attachments/assets/855207dc-c8c7-44bc-896c-cc95a690e4f1" />
-<img width="1180" height="848" alt="Screenshot 2026-05-25 192902" src="https://github.com/user-attachments/assets/1720add1-2dff-4c5d-b190-51d394d2179a" />
-<img width="1167" height="892" alt="Screenshot 2026-05-25 192945" src="https://github.com/user-attachments/assets/c9e494a2-a866-46a4-a712-e65fbbbb3e03" />
-<img width="1630" height="899" alt="Screenshot 2026-05-25 193711" src="https://github.com/user-attachments/assets/34a88fe0-9d21-41d9-b765-78d70654b95e" />
-
-</p>
-<p>
-The above pictures are a visual assist for Steps 1 - 3. 
-
-Create Resource group → Create VNet → Create Domain Controller VM → Change private IP from Dynamic to Static
-
-</p>
-<br />
-
-<p>
-<img width="1637" height="986" alt="Screenshot 2026-05-25 193835" src="https://github.com/user-attachments/assets/95df6f4c-2556-4b9e-bada-4d3547c487f7" />
-<img width="1177" height="904" alt="Screenshot 2026-05-25 193422" src="https://github.com/user-attachments/assets/1442a80d-9775-41fa-862f-81d37d0994b2" />
-<img width="1217" height="895" alt="Screenshot 2026-05-25 193246" src="https://github.com/user-attachments/assets/60f7790d-ddbb-4433-8f13-b025f461664e" />
-
-</p>
-<p>
-Step 4
-Create Client VM (Client VM must have same VNet as DC) → Change DNS Server → Restart Client VM
-</p>
-<br />
-
-<p>
-<img width="4032" height="3024" alt="IMG_0038" src="https://github.com/user-attachments/assets/04fb6cbe-c62b-4fb1-9ae6-76bb6d2c2a86" />
-<img width="4032" height="3024" alt="IMG_0039" src="https://github.com/user-attachments/assets/7755595b-0f27-4eac-98ff-cc00d42e29ff" />
-<img width="4032" height="3024" alt="IMG_0040" src="https://github.com/user-attachments/assets/895ca4ba-f5a5-49ab-b11f-1e497e5d0031" />
-<img width="4032" height="3024" alt="IMG_0041" src="https://github.com/user-attachments/assets/8763f25f-d3ea-43cc-8b3e-32f00732ca6e" />
-<img width="4032" height="3024" alt="IMG_0042" src="https://github.com/user-attachments/assets/e70002e2-a297-4353-aac0-62a08dde75ba" />
-</p>
-<p>
-Step 5 - 6
-
-Open Remote Desktop → Use DC public IP address and credentials to sign in → On server manager → Add roles and features → Active Directory Services → Install
-
-Once it done installing → Promote this server to Domain Controller → Add new forest → insert selected domain (i.e. strakerlab.com) → Update credentials → Domain Controller will automatically restart
-
-</p>
-<br />
-<p>
-<img width="4032" height="3024" alt="IMG_0043" src="https://github.com/user-attachments/assets/515749e9-77b9-43d5-8be9-de2bc334fa60" />
-<img width="4032" height="3024" alt="IMG_0044" src="https://github.com/user-attachments/assets/37308a08-3b6c-4817-b620-6041b956c84e" />
-<img width="4032" height="3024" alt="IMG_0045" src="https://github.com/user-attachments/assets/852da1a0-909c-4b6a-9908-b38f33353cec" />
-<img width="4032" height="3024" alt="IMG_0046" src="https://github.com/user-attachments/assets/f697bf4e-2fd3-4a80-b067-81dc981c9471" />
-<img width="4032" height="3024" alt="IMG_0047" src="https://github.com/user-attachments/assets/cd027c4b-f4b7-4ae2-9da9-599c68b49c26" />
-
-</p>
-<p>
-Step 7
-
-Open Remote Desktop → Use Client public IP address and credentials to sign in → settings → System → About → Rename this PC (Advanced) → Change → Domain name → Use updated credentials → Restart PC
-</p>
-<br />
