@@ -134,7 +134,7 @@ Example:
 
 Testlab.com\username (domain admin)
 
-<h2>Step 8 — Join Client to Domain</h2>
+<h2>Step 7 — Join Client to Domain</h2>
 
 - On the Client VM:
 
