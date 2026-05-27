@@ -141,21 +141,17 @@ Testlab.com\username (domain admin)
 Open:
 Settings → System → About → Rename this PC (Advanced)
 
-Then:
-
 Computer Name Tab → Change → Domain
 
-Enter:
+Enter domain name:
 
-domain name:
-
-Example: Testlab.com
+-Example: Testlab.com
 
 - When prompted:
 
-Username:
+Username and Password
 
-Exampl: Testlab.com\username (domain admin)
+Example: Testlab.com\username (domain admin) 
 
 Password: Use the domain admin password.
 
