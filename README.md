@@ -35,6 +35,8 @@ Click on <b>Virtual Network</b> → Create → name your VNet
 
 Example VNet: TEST
 
+<p><img width="700" height="953" alt="image" src="https://github.com/user-attachments/assets/71d5e39a-fec9-4f21-a273-844704e0b6bd" />
+</p>
 
 <h2> Step 2 - Create the Domain Controller VM</h2>
 
@@ -60,6 +62,9 @@ Example: DC1
 
 - VNet: TEST
 
+<p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/61072eac-e888-445e-8718-756e700e50d7" />
+</p>
+
 <h2>Step 3 — Set Static Private IP</h2>
 
 After the VM deploys go to:
@@ -71,6 +76,10 @@ Change:
 - Allocation: Dynamic → Static → Save changes
 
 - This is important because clients must always find the domain controller at the same IP.
+
+<p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/2b2d0546-bb4a-48c7-8235-1d3b90f2168f" />
+
+</p>
 
 <h2>Step 4 — Create Client VM</h2>
 
@@ -94,6 +103,9 @@ Example: TestRG
 
 - The Client VM must use the Domain Controller as DNS.
 
+p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/1e18551e-c4e7-4c9d-bfbb-762fb32ea7a1" />
+</p>
+
 <h2>Step 5 — Change Client DNS Server</h2>
 
 Go to:
@@ -102,6 +114,9 @@ Go to:
 
 - Save → Restart the Client VM.
 
+p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/841ce39a-4c2c-48a4-bdc9-806267dad097" />
+
+</p>
 <h2>Step 6 — Install Active Directory Domain Services</h2>
 
 - Connect to DC1 using Remote Desktop (RDP).
@@ -134,6 +149,11 @@ Example:
 
 Testlab.com\username (domain admin)
 
+<p><img width="1328" height="773" alt="image" src="https://github.com/user-attachments/assets/e292cf40-4c65-4cf4-be50-9d4df815683d" /></p>
+
+  
+<p><img width="700" height="953" alt="image" src="https://github.com/user-attachments/assets/3cfac873-dbde-4d1c-9612-a0dc3a3db857" />
+</p>
 <h2>Step 7 — Join Client to Domain</h2>
 
 - On the Client VM:
@@ -156,6 +176,9 @@ Example: Testlab.com\username (domain admin)
 Password: Use the domain admin password.
 
 - Restart the PC.
+
+<p><img width="700" height="953" alt="image" src="https://github.com/user-attachments/assets/af3e1630-f7aa-4137-a450-83e9de67a972" />
+</p>
 
 - <h2>You now have Active Directory working.</h2>
 
