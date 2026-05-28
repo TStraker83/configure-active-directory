@@ -35,7 +35,8 @@ Click on <b>Virtual Network</b> → Create → name your VNet
 
 Example VNet: TEST
 
-<p><img width="700" height="953" alt="image" src="https://github.com/user-attachments/assets/71d5e39a-fec9-4f21-a273-844704e0b6bd" />
+<p><img width="700" height="953" alt="image" src="https://github.com/user-attachments/assets/90d2204b-ce5d-4db5-ba6b-e6d1033dbf43" />
+
 </p>
 
 <h2> Step 2 - Create the Domain Controller VM</h2>
