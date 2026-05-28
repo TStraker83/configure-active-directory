@@ -110,7 +110,8 @@ Example: TestRG
 
 - The Client VM must use the Domain Controller as DNS.
 
-p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/1e18551e-c4e7-4c9d-bfbb-762fb32ea7a1" />
+p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/77b82461-e420-4498-83b0-7ed7fd1251bc" />
+
 </p>
 
 <h2>Step 5 — Change Client DNS Server</h2>
