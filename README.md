@@ -27,6 +27,9 @@ Click on <b>Resource Group</b> → Create → name your Resource Group
 
 Example: TestRG
 
+<p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/7eb2a020-40a3-44af-abd1-37ea21741158" />
+</p>
+
 Then:
 
 - Create a Virtual Network (VNet):
@@ -35,8 +38,7 @@ Click on <b>Virtual Network</b> → Create → name your VNet
 
 Example VNet: TEST
 
-<p><img width="700" height="953" alt="image" src="https://github.com/user-attachments/assets/90d2204b-ce5d-4db5-ba6b-e6d1033dbf43" />
-
+<p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/2cfef8ad-5f09-4740-9cb5-68376120dd8b" />
 </p>
 
 <h2> Step 2 - Create the Domain Controller VM</h2>
@@ -63,7 +65,11 @@ Example: DC1
 
 - VNet: TEST
 
-<p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/61072eac-e888-445e-8718-756e700e50d7" />
+<p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/e414edbd-970e-4785-a1cd-f3fc46b59049" />
+
+</p>
+
+<p><img width="700" height="450" alt="image" src="https://github.com/user-attachments/assets/af07c7ab-dfd5-4161-b164-b901eb46ae56" />
 </p>
 
 <h2>Step 3 — Set Static Private IP</h2>
